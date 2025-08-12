@@ -1,0 +1,17 @@
+#TASK 1
+def factorial(n):
+    if n < 2 :
+        return 1
+    else:
+        return n * (factorial(n-1))
+a = int(input("Enter a number: "))
+result = factorial(a)
+print(result)
+
+# Task 2
+import math
+a = int(input("Enter a number: "))
+result_1 = math.sqrt(a)
+result_2 = math.log(a)
+result_3 = math.sin(a) #if not mentioned a is taken in radians only.
+print(f" Square root of {a} is {result_1}\n Natural log of {a} is {result_2}\n Natural sinh of {a} is {result_3}")
