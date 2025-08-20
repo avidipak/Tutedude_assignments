@@ -1,0 +1,38 @@
+#Task 1 create a file and read its line by line contents ( this condition creates the files and read its content line by line)
+
+file = open ("sample.txt",'w')
+write_file = file.write(" Line1 : This is sample file \n Line2 : it has multiple items")
+print(write_file)
+file.close()
+file = open("sample.txt","r")
+read_file = file.read()
+print(read_file)
+file.close()
+
+# Task 1 part 2 (if file doesn't eists error handling)
+try :
+   file1 = open("sample.txt","r")
+   r_file = file1.read()
+   print(r_file)
+   file1.close()
+except FileNotFoundError:
+   print("File requested doesn't exist")
+finally :
+    print("create the file first and then proceed.")
+
+#TASK 2 :--> creating a file output.txt with initial entry and the append it with some more data.
+
+file = open ("output.txt",'w')
+write_file = file.write("Hello, Python!")
+print(write_file)
+file.close()
+file_1 = open("output.txt","a")
+append_file = file_1.write("\nLearning File handling in Python.")
+print(append_file)
+file_1.close()
+file_2 = open("output.txt","r")
+read_file = file_2.read()
+print(read_file)
+file_2.close()
+
+
