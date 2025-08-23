@@ -1,0 +1,30 @@
+#Task1
+#Method-1
+list = [1,2,3,4,5,6,7,8,9]
+print (list.index(8))
+
+R_Card = {'Avi':95, 'Rudransh':98, 'Divyam' : 85}
+s_name = input("Enter the Student Name ")
+if s_name in R_Card:
+    print(f"{s_name} Marks: {R_Card[s_name]}")
+else:
+    print(f"Student not found")
+
+#Method-2
+
+R_Card = {'Avi':95, 'Rudransh':98, 'Divyam' : 85}
+s_name = input("Enter the Student Name ")
+marks = R_Card.get(s_name)
+if marks is not None:
+    print(f"{s_name} Marks: {marks}")
+else:
+    print(f"Student not found")
+
+#TASK 2
+list = [1,2,3,4,5,6,7,8,9,10]
+print(f"original list : {list}")
+List_fisrt5 = list[:5]
+print(f"Extracted first five elements {List_fisrt5}")
+List_Rev_Last5 = list[4::-1]
+print(f"Reversed extracted elements {List_Rev_Last5}")
+
